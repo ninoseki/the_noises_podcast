@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0033)http://www.enterjam.com/?cid=3#te -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta property="og:site_name" content="EnterJam - エンタジャム - 映画・アニメ・ゲームの総合エンタメサイト">
+<meta property="og:image" content="http://enterjam.net/images/jamytan.jpg">
+<title>コラム＆ポッドキャスト／ザ・ノイジーズ | EnterJam - エンタジャム - 映画・アニメ・ゲームの総合エンタメサイト</title>
+<link rel="stylesheet" href="./index_files/jm_style.css" type="text/css">
+<link type="text/css" href="./index_files/style.css" rel="stylesheet" media="screen,print">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.enterjam.com/?mode=rss">
+<link rel="alternate" type="application/atom+xml" href="http://www.enterjam.com/?mode=atom">
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="http://www.enterjam.com/?cid=3">
+<script src="./index_files/sdk.js" id="fbjssdk" type="text/javascript" async="" charset="UTF-8"></script><script async="" src="./index_files/analytics.js"></script><script type="text/javascript" src="./index_files/cookie.js"></script>
+<script type="text/javascript" src="./index_files/DropDownMenu.js"></script>
+<link rel="shortcut icon" href="http://img-cdn.jg.jugem.jp/d96/1732976/20100612_810467.gif">
+<link rel="shortcut icon" href="http://enterjam.net/images/favicon.ico">
+<script type="text/javascript" charset="utf-8" async="" src="./index_files/button.8035dc46d6fa29e954821e4e5168478a.js"></script><style type="text/css" id="eow_sv_style">#sideView_wrapper {
+height: 400px;
+width: 500px;
+border-top: 1px solid #999 !important;
+border-left: 1px solid #999 !important;
+box-shadow: -1px 2px 2px rgba(0,0,0,0.3) !important;
+position: fixed !important;
+right: 0px !important;
+bottom: 0px !important;
+z-index: 2147483646;
+}
+#sideView_ifr {
+border: none !important;
+height: 100%;
+width: 100%;
+}#sideView_wrapper {
+position: fixed !important;
+left: auto !important;
+right: 0px !important;
+top: auto !important;
+bottom: 0px !important;
+}
+#sideView_wrapper .ui-resizable-nw {
+background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/resize-grip-nw.png") !important;
+background-repeat: no-repeat !important;
+cursor: nw-resize !important;
+width: 20px !important;
+height: 20px !important;
+position: absolute !important;
+top: 0px !important;
+left: 0px !important;
+}sideView_icons
+{
+padding: 0 !important;
+margin: 0 !important;
+border-style: none !important;
+z-index: 1002 !important
+}#pun_ui {
+width: 24px;
+height: 24px;
+position: absolute !important;
+left: 7px !important;
+top: -2px !important;
+z-index: 1005;
+}
+#pun_ui[ison="true"] {
+background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/pin_on.png") !important;
+}
+#pun_ui[ison="false"] {
+background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/pin_off.png") !important;
+}#toggle_header {
+width: 24px;
+height: 24px;
+position: absolute !important;
+left: 33px !important;
+top: 0px !important;
+}
+#toggle_header[ison="true"] {
+background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/openheader.png") !important;
+}
+#toggle_header[ison="false"] {
+background-image: url("chrome-extension://oonalfdoahlmjaoloddjenihohbfodme/img/hideheader.png") !important;
+z-index: 1005;
+}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body onload="javascript:initval();" data-feedly-mini="yes">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66908607-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- wrapper -->
+<div id="wrapper">
+<a id="top" name="top"></a>
+
+<!-- header -->
+<div id="header">
+
+
+<h1><a href="http://www.enterjam.com/"><img src="./index_files/20100612_810189.gif" width="458" height="87" alt="映画・アニメ・ゲームの総合エンタメサイト、エンタジャム"></a></h1>
+
+<div id="topad">
+<a href="http://enterjam.com/?eid=6397#sequel">
+<!-- FLASHバナー設置　ココから-->
+<!--
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="500" height="75" id="prometheus" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="http://enterjam.net/prometheus/prometheus.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#000000" />
+	<embed src="http://enterjam.net/prometheus/prometheus.swf" quality="high" bgcolor="#000000" width="500" height="75" name="pred_flash" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+</a>
+-->
+<!-- FLASHバナー設置　ココまで-->
+
+<!-- ターミネーターバナー  ココから -->
+</a><a href="http://www.193t.jp/" target="_blank">
+<img src="./index_files/20140717_1230452.jpg" alt="horrar" width="500" height="75" class="pict"></a>
+<!-- ターミネーターバナー　ココまで -->
+
+</div>
+
+<div id="description">映画・アニメ・ゲームの総合エンタメサイト</div>
+<br class="floatclear">
+
+
+
+<div id="menuarea">
+<ul id="dd">
+<li>
+<a href="http://www.enterjam.com/" class="menu" id="mmenu1" onmouseover="mopen(1);" onmouseout="mclosetime();">ホーム</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?cid=3#" class="menu" id="mmenu2" onmouseover="mopen(2);" onmouseout="mclosetime();">アニメ</a>
+<div class="submenu" id="menu2" onmouseover="mcancelclosetime()" onmouseout="mclosetime();">
+<a href="http://www.enterjam.com/?cid=13#te">作品紹介</a>
+<a href="http://enterjam.com/?cid=14#te">ニュース・レポート</a>
+<a href="http://enterjam.com/?cid=4#te">インタビュー</a>
+</div>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?cid=3#" class="menu" id="mmenu3" onmouseover="mopen(3);" onmouseout="mclosetime();">映画</a>
+<div class="submenu" id="menu3" onmouseover="mcancelclosetime()" onmouseout="mclosetime();">
+<a href="http://www.enterjam.com/?cid=9#te">ニュース・レポート</a>
+<a href="http://www.enterjam.com/?cid=1#te">インタビュー</a>
+<a href="http://www.enterjam.com/?cid=17#te">レビュー</a>
+</div>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?cid=3#" class="menu" id="mmenu4" onmouseover="mopen(4);" onmouseout="mclosetime();">ゲーム</a>
+<div class="submenu" id="menu4" onmouseover="mcancelclosetime()" onmouseout="mclosetime();">
+<a href="http://www.enterjam.com/?cid=7#te">作品紹介</a>
+<a href="http://www.enterjam.com/?cid=5#te">ニュース・レポート</a>
+<a href="http://www.enterjam.com/?cid=6#te">インタビュー</a>
+</div>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?cid=3#" class="menu" id="mmenu5" onmouseover="mopen(5);" onmouseout="mclosetime();">コラム</a>
+<div class="submenu" id="menu5" onmouseover="mcancelclosetime()" onmouseout="mclosetime();" style="visibility: hidden;">
+<a href="http://www.enterjam.com/?cid=16#te">町山智浩のアメリカ映画特電</a>
+<a href="./index_files/index.html">ザ・ノイジーズ</a>
+<a href="http://www.enterjam.com/?cid=2#te">炎のディスクコマンドー</a>
+</div>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?cid=11#te" class="menu" id="mmenu6" onmouseover="mopen(6);" onmouseout="mclosetime();">映画生解説</a>
+</li>
+
+
+<li>
+<a href="http://www.enterjam.com/?cid=3#" class="menu" id="mmenu8" onmouseover="mopen(8);" onmouseout="mclosetime();">プレゼント</a>
+<div class="submenu" id="menu8" onmouseover="mcancelclosetime()" onmouseout="mclosetime();" style="visibility: hidden;">
+<a href="http://www.enterjam.com/?cid=18#te">試写会</a>
+<a href="http://www.enterjam.com/?cid=20#te">グッズ</a>
+<a href="http://www.enterjam.com/?cid=19#te">ゲームソフト</a>
+</div>
+</li>
+
+
+</ul>
+</div>
+
+<div id="searcharea">
+<form method="get" action="http://www.enterjam.com/">
+		<table cellpadding="2" cellspacing="3" border="0">
+		<tbody><tr valign="middle">
+		<td><input id="search" name="search" size="20" style="width:100px" class="search"></td>
+		<td><input type="submit" value="　検索　"></td>
+		</tr>
+		</tbody></table>
+	  </form>
+    </div>
+
+<br class="floatclear">
+
+</div>
+
+<!-- /header -->
+
+<!-- content -->
+<div id="content">
+
+
+	<!-- left -->
+	<div id="left">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ub_cl_enterjam_160x600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4621889026834028" data-ad-slot="8500405243"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+              params: {
+              google_ad_region: "AAA01"}
+});
+</script>
+
+		
+		<div class="sideContents3">
+		<div class="freetitle">プレゼント</div>
+<ul class="present">
+
+<li><a href="http://www.enterjam.com/?eid=9205#sequel">吹替の帝王「コマンドー 珠玉の名訳カレンダー」20名様</a></li>
+
+<li><a href="http://www.enterjam.com/?eid=9278#sequel">映画『ラスト・ナイツ』一般試写会　10組20名様</a></li>
+
+<br>
+<br>
+<br>
+
+</ul>
+		</div>
+		
+
+
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f11406590%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f15614789%2f" target="_blank"><img src="./index_files/saved_resource" alt="【楽天ブックスならいつでも送料無料】ゲームライブラリシリーズ 「ザ・裏ワザSP」 スーパーマ..." border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f11406590%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f15614789%2f" target="_blank">	ゲームライブラリシリーズ 「ザ・裏ワザSP」 スーパーマリオ編</a><br></p></div></td></tr></tbody></table>
+
+</center>
+<img src="./index_files/20120316_1863367.gif" <br="">
+
+
+<center>
+<!--1位-->
+
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13252508%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17457595%2f" target="_blank"><img src="./index_files/saved_resource(1)" alt="【楽天ブックスならいつでも送料無料】スーパーロボット大戦BX" border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13252508%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17457595%2f" target="_blank">スーパーロボット大戦BX</a><br></p></div></td></tr></tbody></table>
+
+
+<!--2位-->
+
+
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13280935%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17486201%2f" target="_blank"><img src="./index_files/saved_resource(2)" alt="【楽天ブックスならいつでも送料無料】どうぶつの森　ハッピーホームデザイナー" border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13280935%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17486201%2f" target="_blank">どうぶつの森　ハッピーホームデザイナー</a><br></p></div></td></tr></tbody></table>
+
+
+<!--3位-->
+
+
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13361299%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17568413%2f" target="_blank"><img src="./index_files/saved_resource(3)" alt="【楽天ブックスならいつでも送料無料】妖怪ウォッチバスターズ 赤猫団／白犬隊 オフィシャル完..." border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13361299%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17568413%2f" target="_blank">妖怪ウォッチバスターズ 赤猫団／白犬隊 オフィシャル完...</a><br></p></div></td></tr></tbody></table>
+
+<!--4位-->
+
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13197221%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17402837%2f" target="_blank"><img src="./index_files/saved_resource(4)" alt="【楽天ブックスならいつでも送料無料】Splatoon（スプラトゥーン）" border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13197221%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17402837%2f" target="_blank">Splatoon（スプラトゥーン）</a><br></p></div></td></tr></tbody></table>
+
+
+<!--5位-->
+
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top"><div style="border:1px none;margin:0px;padding:6px 0px;width:160px;text-align:center;float:left"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13197222%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17402831%2f" target="_blank"><img src="./index_files/saved_resource(5)" alt="【楽天ブックスならいつでも送料無料】リズム天国 ザ・ベスト＋" border="0" style="margin:0px;padding:0px"></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px"><a href="http://hb.afl.rakuten.co.jp/hgc/14405db6.b2ce8d40.14405db7.39bec156/?pc=http%3a%2f%2fitem.rakuten.co.jp%2fbook%2f13197222%2f%3fscid%3daf_link_tbl&m=http%3a%2f%2fm.rakuten.co.jp%2fbook%2fi%2f17402831%2f" target="_blank">リズム天国 ザ・ベスト＋</a><br></p></div></td></tr></tbody></table>
+
+</center>
+
+
+<div class="freetitle">通信販売</div>
+<!---通販バナー--->
+<a href="http://enterjam.shop-pro.jp/" target="_blank">
+<img src="./index_files/20150731_1715284.jpg" alt="WS000000.JPG" width="151" height="271" class="pict">
+</a>
+<br>
+<!---通販バナー--->
+
+
+			
+		
+			
+
+	</div>
+	<!-- /left -->
+    
+	<!-- main -->
+	<div id="main">
+
+<!-- トピックここから -->
+
+<div id="topicareatop">　</div>
+<div id="mainad">
+<div class="float">
+<a href="http://www.enterjam.com/?eid=9251#sequel"><img src="./index_files/20150929_1781458.jpg" alt="0r2p4nmy.jpg" width="250" height="167" class="pict"></a></div>
+
+<p class="tptitle">
+<a href="http://www.enterjam.com/?eid=9251#sequel">映画『チャッピー』発売記念 ニコニコ公式生放送「オレたちのロボット映画ベスト１０」放送決定！
+</a></p><a href="http://www.enterjam.com/?eid=9251#sequel"><br class="floatclear">
+</a><div class="mab"><a href="http://www.enterjam.com/?eid=9251#sequel">
+</a><ul class="topics"><a href="http://www.enterjam.com/?eid=9251#sequel">
+
+</a><li><a href="http://www.enterjam.com/?eid=9251#sequel">
+</a><a href="http://www.enterjam.com/?eid=9053#sequel">
+マーベル史上、最も過激(やりすぎ)なヒーロー誕生！『デッドプール』Red Band版予告が解禁</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9142#sequel">
+『バットマン vs スーパーマン　ジャスティスの誕生』日米同時公開決定</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9138#sequel">
+TVドラマ『監獄学園-プリズンスクール-』特報映像解禁！</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9080#sequel">
+アドレナリン全開のノンストップ・カートバトル『マッドマックス 怒りのデス・ロード』10月21日ブルーレイ＆ＤＶＤリリース決定！！</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9150#sequel">
+アニメ『亜人』TVシリーズ制作決定！さらにNetflixから世界へ配信！</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9145#sequel">
+『悪魔のいけにえ 公開４０周年記念版』迫力の日本版キーアート完成！
+</a>
+</li>
+
+<li>
+<a href="http://www.enterjam.com/?eid=9136#sequel">
+第771回 ネットラジオ ザ・ノイジーズ 本日のお題：クイズを語ろう！！
+</a></li><a href="http://www.enterjam.com/?eid=9136#sequel">
+
+</a></ul><a href="http://www.enterjam.com/?eid=9136#sequel">
+</a></div></div><a href="http://www.enterjam.com/?eid=9136#sequel">
+<div id="topicareabottom">　</div>
+
+<!-- トピックここまで -->			
+		   
+
+		</a><div class="entry"><a href="http://www.enterjam.com/?eid=9136#sequel"></a><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第785回 ネットラジオ ザ・ノイジーズ 本日のお題：さらば青春！クルーズ移転記念！思い出の岩本町事務所で自由に語ってみよう！！</h2>
+            <div class="date">2015.10.03 Saturday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9287">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">クルーズがとうとう岩本町から新事務所に移転！less北山、梅氏、パッキー小林の3人で思い出の詰まったこの事務所で最後の収録！でも、ザ・ノイジーズは続きます！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9287#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9287#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<script src="./index_files/widgets.js" type="text/javascript" charset="UTF-8"></script>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja.html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9287"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9287" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9287&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f36c5b5c7" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button.html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9287"
+   dc:identifier="http://www.enterjam.com/?eid=9287"
+   dc:title="第785回 ネットラジオ ザ・ノイジーズ 本日のお題：さらば青春！クルーズ移転記念！思い出の岩本町事務所で自由に語ってみよう！！"
+   dc:description="クルーズがとうとう岩本町から新事務所に移転！less北山、梅氏、パッキー小林の3人で思い出の詰まったこ..."
+   dc:creator="Enterjam"
+   dc:date="2015-10-03T11:55:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第781回 ネットラジオ ザ・ノイジーズ 本日のお題：「パネルクイズ アタック25」にアタックしてきたless北山さんにどんなだったか聞いてみよう！</h2>
+            <div class="date">2015.09.29 Tuesday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9257">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回はクイズ番組「パネルクイズ アタック25」に出演するべく孤軍奮闘したless北山さんにどんなだったかをお聞きします。聞き手はパッキー小林でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9257#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9257#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(1).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9257"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9257" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9257&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f2908a999" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(9).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9257"
+   dc:identifier="http://www.enterjam.com/?eid=9257"
+   dc:title="第781回 ネットラジオ ザ・ノイジーズ 本日のお題：「パネルクイズ アタック25」にアタックしてきたless北山さんにどんなだったか聞いてみよう！"
+   dc:description="今回はクイズ番組「パネルクイズ アタック25」に出演するべく孤軍奮闘したless北山さんにどんなだったか..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-29T1:15:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第780回 ネットラジオ ザ・ノイジーズ 本日のお題：映画『バケモノの子』について語ろう！</h2>
+            <div class="date">2015.09.26 Saturday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9246">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回は映画『バケモノの子』！この映画、なんかおかしくないか？？についてless北山がかたります。相手はパッキー小林でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9246#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9246#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(2).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9246"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9246" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9246&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f18eaf26bc" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(7).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9246"
+   dc:identifier="http://www.enterjam.com/?eid=9246"
+   dc:title="第780回 ネットラジオ ザ・ノイジーズ 本日のお題：映画『バケモノの子』について語ろう！"
+   dc:description="今回は映画『バケモノの子』！この映画、なんかおかしくないか？？についてless北山がかたります。相手..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-26T11:57:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第779回 ネットラジオ ザ・ノイジーズ 本日のお題：アニメ「長門有希ちゃんの消失」最終回までについて語ろう！</h2>
+            <div class="date">2015.09.22 Tuesday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9230">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回はアニメ「長門有希ちゃんの消失」。less北山とパッキー小林でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9230#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9230#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-3" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(3).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9230"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9230" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9230&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f29efc164c" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(6).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9230"
+   dc:identifier="http://www.enterjam.com/?eid=9230"
+   dc:title="第779回 ネットラジオ ザ・ノイジーズ 本日のお題：アニメ「長門有希ちゃんの消失」最終回までについて語ろう！"
+   dc:description="今回はアニメ「長門有希ちゃんの消失」。less北山とパッキー小林でお届けします！"
+   dc:creator="Enterjam"
+   dc:date="2015-09-22T0:39:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第778回 ネットラジオ ザ・ノイジーズ 本日のお題：映画『イコライザー』について語ろう！</h2>
+            <div class="date">2015.09.20 Sunday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9225">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回は映画『イコライザー』について。less北山と梅氏でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9225#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9225#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-4" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(4).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9225"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9225" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9225&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f9f63341" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(4).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9225"
+   dc:identifier="http://www.enterjam.com/?eid=9225"
+   dc:title="第778回 ネットラジオ ザ・ノイジーズ 本日のお題：映画『イコライザー』について語ろう！"
+   dc:description="今回は映画『イコライザー』について。less北山と梅氏でお届けします！"
+   dc:creator="Enterjam"
+   dc:date="2015-09-20T0:43:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第777回 ネットラジオ ザ・ノイジーズ 本日のお題：『ターミネーター: 新起動/ジェニシス』について語ろう！</h2>
+            <div class="date">2015.09.15 Tuesday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9183">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回は『ターミネーター: 新起動/ジェニシス』について。メンバーはless北山、パッキー小林、梅氏でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9183#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9183#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-5" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(5).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9183"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9183" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9183&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f27cd086fc" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(1).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9183"
+   dc:identifier="http://www.enterjam.com/?eid=9183"
+   dc:title="第777回 ネットラジオ ザ・ノイジーズ 本日のお題：『ターミネーター: 新起動/ジェニシス』について語ろう！"
+   dc:description="今回は『ターミネーター: 新起動/ジェニシス』について。メンバーはless北山、パッキー小林、梅氏でお届..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-15T8:43:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第775回 ネットラジオ ザ・ノイジーズ 本日のお題：『ラブライブ!The School Idol Movie』について語ろう！！</h2>
+            <div class="date">2015.09.12 Saturday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9169">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回は『ラブライブ!The School Idol Movie』をパッキー小林とless北山の二人で語ります！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9169#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9169#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-6" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(6).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9169"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9169" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9169&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f147d1ad58" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(5).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9169"
+   dc:identifier="http://www.enterjam.com/?eid=9169"
+   dc:title="第775回 ネットラジオ ザ・ノイジーズ 本日のお題：『ラブライブ!The School Idol Movie』について語ろう！！"
+   dc:description="今回は『ラブライブ!The School Idol Movie』をパッキー小林とless北山の二人で語ります！"
+   dc:creator="Enterjam"
+   dc:date="2015-09-12T4:02:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第771回 ネットラジオ ザ・ノイジーズ 本日のお題：クイズを語ろう！！</h2>
+            <div class="date">2015.09.08 Tuesday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9136">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">今回は2015年6月19日に開催されたトークイベントをお届けします！ゲストはQuiz Japan編集長大門弘樹氏、構成作家の矢野了平氏、そして第15回アメリカ横断ウルトラクイズ」チャンピオン能勢 一幸さん！MCはless北山、パッキー小林でお届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9136#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9136#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-7" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(7).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9136"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9136" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9136&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="fcfb80d88" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(8).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9136"
+   dc:identifier="http://www.enterjam.com/?eid=9136"
+   dc:title="第771回 ネットラジオ ザ・ノイジーズ 本日のお題：クイズを語ろう！！"
+   dc:description="今回は2015年6月19日に開催されたトークイベントをお届けします！ゲストはQuiz Japan編集長大門弘樹氏、..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-08T23:07:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第770回 ネットラジオ ザ・ノイジーズ 本日のお題：ジャンクハンター吉田と一緒に語り明かそう！</h2>
+            <div class="date">2015.09.05 Saturday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9113">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">less北山とジャンクハンター吉田。切っても切れない宿縁か悪縁か？運命で結びいた二人がなんと2時間30分語り明かします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9113#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9113#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-8" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(8).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9113"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9113" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9113&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f2d1a4a778" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(3).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9113"
+   dc:identifier="http://www.enterjam.com/?eid=9113"
+   dc:title="第770回 ネットラジオ ザ・ノイジーズ 本日のお題：ジャンクハンター吉田と一緒に語り明かそう！"
+   dc:description="less北山とジャンクハンター吉田。切っても切れない宿縁か悪縁か？運命で結びいた二人がなんと2時間30分..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-05T0:30:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		<div class="entry"><a name="sequel"></a>
+<a name="te"></a><img src="./index_files/20100529_752881.gif" width="580"><br>
+<h2>第776回 ネットラジオ ザ・ノイジーズ 本日のお題：続々『マッドマックス 怒りのデス・ロード』について語ろう！</h2>
+            <div class="date">2015.09.01 Tuesday｜<a href="http://www.enterjam.com/?cid=3">コラム＆ポッドキャスト／ザ・ノイジーズ</a>｜<a href="http://www.enterjam.com/?eid=9079">この記事のURL</a>
+</div>
+			<div class="entryBody"><div class="jgm_entry_desc_mark">パッキー小林もようやく参入！『マッドマックス 怒りのデス・ロード』語り怒りの4回目！パッキー小林、梅氏、less北山お届けします！<div><br>
+<h4><a href="http://www.enterjam.com/?eid=9079#sequel"><img title="TheNoises-logo" height="85" alt="ザ・ノイジーズ（The Noises）" src="./index_files/TheNoises_rogo.jpg" width="550" align="middle"></a></h4></div></div></div>
+			
+
+<div class="entry_more">
+
+<a href="http://www.enterjam.com/?eid=9079#sequel"><img src="./index_files/20100826_1010161.gif" alt="続きを読む" width="580" height="45"></a>
+<div class="service_button" style="margin:25px 0; padding:0px;">
+
+<iframe id="twitter-widget-9" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./index_files/tweet_button.b368d0ecbe24b201dcb5014c6a89372e.ja(9).html" style="position: static; visibility: visible; width: 68px; height: 20px;" data-url="http://www.enterjam.com/?eid=9079"></iframe>  <div class="fb-share-button fb_iframe_widget" data-href="http://www.enterjam.com/?eid=9079" data-layout="button_count" data-width="110" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=264046217008105&amp;container_width=68&amp;href=http%3A%2F%2Fwww.enterjam.com%2F%3Feid%3D9079&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;width=110"><span style="vertical-align: bottom; width: 87px; height: 20px;"><iframe name="f7880843c" width="110px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./index_files/share_button(2).html" style="border: none; visibility: visible; width: 87px; height: 20px;" class=""></iframe></span></div> 
+
+</div>                    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/R_qmi4A5CC2.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/R_qmi4A5CC2(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+                    <script>
+                    (function(d, s) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      var load = function(url, id, charset) {
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.src = url;
+                        js.id = id;
+                        js.type = 'text/javascript';
+                        js.async = true;
+                        if (charset) js.charset = charset;
+                        fjs.parentNode.insertBefore(js, fjs);
+                      };
+                      
+                      load('//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0&appId=264046217008105', 'fbjssdk', 'UTF-8');
+                    }(document, 'script'));
+                    </script>
+                    <style type="text/css">
+                      .fb-like iframe {
+                        max-width: none!important;
+                      }
+                    </style>
+
+</div>
+		 </div>
+                
+		<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+   rdf:about="http://www.enterjam.com/?eid=9079"
+   dc:identifier="http://www.enterjam.com/?eid=9079"
+   dc:title="第776回 ネットラジオ ザ・ノイジーズ 本日のお題：続々『マッドマックス 怒りのデス・ロード』について語ろう！"
+   dc:description="パッキー小林もようやく参入！『マッドマックス 怒りのデス・ロード』語り怒りの4回目！パッキー小林、..."
+   dc:creator="Enterjam"
+   dc:date="2015-09-01T0:40:00+09:00"
+ /></rdf:RDF>
+-->
+
+		
+		
+		    
+		
+        
+        
+        
+    
+    
+		
+		
+		
+		
+		<div id="entryNavi">
+		 | 1／43ページ | <a href="http://www.enterjam.com/?page=1&cid=3">&gt;&gt;</a>
+		</div>
+		
+		
+		<div class="pageTop">
+		<a href="http://www.enterjam.com/?cid=3#top">このページの先頭へ▲</a>
+		</div>
+
+	</div>
+	<!-- /main -->
+        
+	<!-- right -->
+	<div id="right">
+
+		
+		<div class="sideContents">
+		<a href="http://ch.nicovideo.jp/channel/ch6991" target="_blank">
+<img src="./index_files/20110811_1601578.jpg" alt="エンタジャムチャンネル" width="150" height="150" class="sidepict">
+
+
+</a><a href="http://www.foxmovies.jp/96hours/" target="_blank">
+<img src="./index_files/20150413_1581228.jpg" alt="taken" width="150" height="300" class="sidepict">
+
+
+</a><a href="http://video.foxjapan.com/library/fukikae_series/commando30/" target="_blank">
+<img src="./index_files/20150413_1581227.jpg" alt="commando" width="150" height="300" class="sidepict">
+
+
+</a><a href="http://video.foxjapan.com/24/" target="_blank">
+<img src="./index_files/20150306_1533894.jpg" alt="xmen" width="150" height="300" class="sidepict">
+
+</a><a href="http://www.amazon.co.jp/%E3%83%88%E3%83%A9%E3%83%BB%E3%83%88%E3%83%A9%E3%83%BB%E3%83%88%E3%83%A9-%E8%A3%BD%E4%BD%9C%E5%9B%9B%E5%8D%81%E4%BA%94%E5%91%A8%E5%B9%B4%E8%A8%98%E5%BF%B5%E7%89%88-%E3%82%A2%E3%83%AB%E3%83%86%E3%82%A3%E3%83%A1%E3%83%83%E3%83%88%E3%83%BB%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AC%E3%82%A4BOX-000%E3%82%BB%E3%83%83%E3%83%88%E5%AE%8C%E5%85%A8%E6%95%B0%E9%87%8F%E9%99%90%E5%AE%9A-Blu-ray/dp/B00QIRDT5C/ref=sr_1_2?ie=UTF8&qid=1425357697&sr=8-2&keywords=%E3%83%88%E3%83%A9%E3%83%88%E3%83%A9%E3%83%88%E3%83%A9" target="_blank">
+<img src="./index_files/20150302_1529275.jpg" alt="xmen" width="150" height="300" class="sidepict">
+
+</a><a href="http://bd-dvd.sonypictures.jp/fury/" target="_blank">
+<img src="./index_files/20150219_1515182.jpg" alt="xmen" width="150" height="300" class="sidepict">
+
+
+</a><a href="http://www.foxmovies.jp/xmen/" target="_blank">
+<img src="./index_files/20141112_1394123.jpg" alt="xmen" width="150" height="300" class="sidepict">
+
+
+
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ub_cl2_enterjam_160x600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4621889026834028" data-ad-slot="9977138443"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+              params: {
+              google_ad_region: "AAA01"}
+});
+</script>
+		</a></div><a href="http://www.foxmovies.jp/xmen/" target="_blank">
+		
+   
+		
+
+		
+
+		<!-- powered -->
+		<h3>更新情報</h3>
+		</a><div class="sideContents"><a href="http://www.foxmovies.jp/xmen/" target="_blank">
+		<img src="./index_files/20100613_813863.gif">
+		</a><ul><a href="http://www.foxmovies.jp/xmen/" target="_blank">
+		</a><li><a href="http://www.foxmovies.jp/xmen/" target="_blank"></a><a href="http://www.enterjam.com/?mode=rss">RSS1.0</a></li>
+		<li><a href="http://www.enterjam.com/?mode=atom">Atom0.3</a></li>
+<li><a href="http://twitter.com/enterjam" target="_blank"><img src="./index_files/20100826_1010066.png" alt="Twitterボタン" border="0"></a><br></li>
+		</ul>
+		</div>
+		<!-- /powered -->
+
+		<!-- moblie -->
+		<h3>携帯閲覧用コード</h3>
+		<div class="sideContents">
+		<img src="./index_files/saved_resource(6)" alt="qrcode">
+		</div>
+		<!-- /moblie -->
+
+
+	</div>
+	<!-- /right -->
+
+	<br class="clear">
+
+
+<div id="footer2">
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="http://www.enterjam.com/?cid=11#te"><img src="./index_files/20100626_861027.jpg" alt="生解説アーカイブ" width="300" height="80"></a></div>
+<div class="c_description">これがDVDの新しい楽しみ方！豪華ゲストが生放送でガチンコ生解説！様々な視点から作品を徹底解剖します。もちろん各メーカー公認の解説動画です。これまでニコニコ動画でオンエアーした、映画生解説のアーカイブはこちらから。DVDとリンクさせて一緒に再生すれば、楽しさ100倍ですよ！
+</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="http://www.enterjam.com/?cid=16#te"><img src="./index_files/20100626_861025.jpg" alt="america_eigatokuden.jpg" width="300" height="80"></a></div>
+<div class="c_description">米国カリフォルニア州バークレー在住の映画評論家・町山智浩が、
+現地から『EnterJam』でしか聴けないフレッシュなネタからマニアックなネタまで、
+映画の話題を中心に喋ってくれたMP3ファイルデータをポッドキャスティングでお届け！</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="http://enterjam.shop-pro.jp/"><img src="./index_files/20100626_861026.jpg" alt="enterjamshop.jpg" width="300" height="80"></a></div>
+<div class="c_description">マーズ16によるゲーム映画アニメ関連Tシャツや、エンタジャムのコンテンツをまとめたCD販売などが手に入るエンタジャムショップの通販コーナーがオープンしました！</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+
+</div>
+
+<div id="footer2">
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="http://www.enterjam.com/?cid=3#"><img src="./index_files/20100626_861029.jpg" alt="present.jpg" width="300" height="80"></a></div>
+<div class="c_description">映画やアニメのレアグッズ、試写会、ゲームソフトなどのプレゼントを続々更新中！覗いてみるといいことあるかも？？ 
+</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+
+
+
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="http://ch.nicovideo.jp/channel/ch6991"><img src="./index_files/20100626_861030.jpg" alt="ウィークリーFAN" width="300" height="80"></a></div>
+<div class="c_description">ニコニコ動画内「エンタジャムチャンネル」で、毎週金曜日の生放送番組「フライデー・アキバ・ナイト(Friday Akiba Night)」略して「Weekly FAN」話題の映画・アニメ・ゲームの最新情報から、エンタジャムの取材裏話、そして誰も知らないマニアックな話題まで、様々なエンタメ情報をテレビ局ではやらない角度からお届けしていきます。</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+<!-- コンテンツ説明１ブロックここから -->
+<div id="c_menu">
+<div class="c_title"><a href="./index_files/index.html"><img src="./index_files/20100626_861028.jpg" alt="noises.jpg" width="300" height="80"></a></div>
+<div class="c_description">エンタジャムが生ぬるいネットラジオ業界に殴りこみ（笑）映画・ゲーム・アニメ・漫画・音楽から精神世界まで、ありとあらゆるキーワードで自分が好きなことだけノンストップで語りつくすネットラジオ！
+</div>
+</div>
+<!-- コンテンツ説明１ブロックここまで -->
+
+
+</div>
+
+<!-- /content/ -->
+
+<!-- footer -->
+
+<div id="footer">
+    <div id="copyright"><img src="./index_files/20101203_1167965.gif" alt="enterjam.com"><br>　
+<a href="http://www.enterjam.com/?eid=13#sequel">会社案内</a>｜
+<a href="http://www.enterjam.com/?eid=12#sequel">プライバシーポリシー</a>｜
+<a href="http://www.enterjam.com/?eid=14#sequel">広告掲載について</a>｜
+<a href="http://www.enterjam.com/?eid=452#sequel">ご意見・ご感想</a>
+
+</div>
+    <div id="copyright">Copyright (C) CRUISE All Rights Reserved. ／ 掲載の記事・写真・イラストなど、すべてのコンテンツの無断複写・転載を禁じます</div>
+</div>
+<!-- /footer -->
+</div>    
+</div>
+<!-- /wrapper/ -->
+    
+
+
+<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; opacity: 0.9; cursor: pointer; top: 57px; left: 573px; background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png); background-size: 100px 25px;"></span></body></html>
