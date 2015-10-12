@@ -8,10 +8,6 @@ configure do
   end
 end
 
-configure :development do
-  register Sinatra::Reloader
-end
-
 get '/' do
   File.read(File.join('public', 'index.html'))
 end
