@@ -5,12 +5,12 @@ require 'sinatra'
 require 'logger'
 
 $logger = Logger.new $stdout
+$stdout.sync = true
 if development?
-  $stdout.sync = true
-  $logger.level = Logger::INFO
+  $logger.level = Logger::DEBUG
   require 'sinatra/reloader'
 elsif production?
-  $logger.level = Logger::WARN
+  $logger.level = Logger::INFO
 end
 
 require './app'

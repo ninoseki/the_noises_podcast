@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/reloader' if development?
 
 configure do
   $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
@@ -12,6 +11,7 @@ get '/' do
   File.read(File.join('public', 'index.html'))
 end
 
+# set a cache setting
 before '/rss' do
   require 'dalli'
   @cache = Dalli::Client.new(
@@ -30,8 +30,12 @@ end
 get '/rss' do
   content_type 'application/xml'
 
-  rss = @cache.get('rss') || TheNoises::Podcast.new.rss
-  @cache.set('rss', rss) unless @cache.get('rss')
+  cached_rss = @cache.get('rss')
+  unless cached_rss
+    logger.info('renew a rss')
+    rss = TheNoises::Podcast.new.rss
+    @cache.set('rss', rss)
+  end
 
-  return rss
+  return cached_rss || rss
 end
