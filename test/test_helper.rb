@@ -1,12 +1,12 @@
 require_relative './../lib/the_noises'
 
+require 'webmock/minitest'
 require 'minitest/spec'
 require 'minitest/autorun'
 
 def body_for_test
   File.read(
-    File.expand_path('../index.html', __FILE__),
-    encoding: 'EUC-JP:UTF-8'
+    File.expand_path('../index.html', __FILE__)
   )
 end
 
