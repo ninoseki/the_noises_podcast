@@ -7,7 +7,8 @@ module TheNoises
     end
 
     def number
-      @number ||= title.match(/第(\d+)回/)[1]
+      m = title.match(/第(\d+)回/)
+      m.nil? ? nil : m[1]
     end
 
     def link
@@ -24,6 +25,10 @@ module TheNoises
 
     def description
       @description ||= @element.css('div.jgm_entry_desc_mark').first.text.chomp
+    end
+
+    def valid?
+      [number, title, link, description, pub_date].all?
     end
 
     def to_rss_item

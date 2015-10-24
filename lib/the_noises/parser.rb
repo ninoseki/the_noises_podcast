@@ -6,7 +6,11 @@ module TheNoises
     BASE_URL = 'http://www.enterjam.com/?cid=3'
 
     def items
-      doc.css('div.entry').map { |e| TheNoises::Item.new(e) }
+      doc.css('div.entry').map do |e|
+        item = TheNoises::Item.new(e)
+
+        item.valid? ? item : nil
+      end.compact
     end
 
     def doc

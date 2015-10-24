@@ -12,15 +12,15 @@ describe TheNoises::Parser do
   end
 
   it 'shoud have items' do
-    @parser.items.length.must_equal 10
+    @parser.items.length.must_equal 9
   end
 
   it 'should hava valid item' do
     item = @parser.items.first
 
-    item.title.must_equal '第785回 ネットラジオ ザ・ノイジーズ 本日のお題：さらば青春！クルーズ移転記念！思い出の岩本町事務所で自由に語ってみよう！！'
-    item.pub_date.must_equal 'Sat, 3 Oct 2015 00:00:00 +0000'
-    item.description.must_include 'クルーズがとうとう'
-    item.link.must_equal 'http://enterjam.net/podcast/noises/785.mp3'
+    item.title.must_equal '第791回 ネットラジオ ザ・ノイジーズ 本日のお題：「「宇宙戦艦ヤマト」をつくった男 西崎義展の狂気」について語ろう！'
+    item.pub_date.must_equal 'Sat, 24 Oct 2015 00:00:00 +0000'
+    item.description.must_include 'こんな本出していいのか！'
+    item.link.must_equal 'http://enterjam.net/podcast/noises/791.mp3'
   end
 end
