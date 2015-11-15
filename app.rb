@@ -22,7 +22,7 @@ before '/rss' do
       failover: true,
       socket_timeout: 1.5,
       socket_failure_delay: 0.2,
-      expires_in: 3600 * 24
+      expires_in: 3600 * 12
     }
   )
 end

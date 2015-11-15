@@ -3,10 +3,10 @@ require 'open-uri'
 
 module TheNoises
   class Parser
-    BASE_URL = 'http://www.enterjam.com/?cid=3'
+    BASE_URL = 'http://www.enterjam.com/?cat=5'
 
     def items
-      doc.css('div.entry').map do |e|
+      doc.css('article.post').map do |e|
         item = TheNoises::Item.new(e)
 
         item.valid? ? item : nil
@@ -18,7 +18,7 @@ module TheNoises
     end
 
     def body
-      @body ||= open(BASE_URL, 'r:EUC-JP').read.encode('UTF-8')
+      @body ||= open(BASE_URL)
     end
   end
 end

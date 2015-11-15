@@ -4,7 +4,7 @@ module TheNoises
   class Podcast
     def initialize
       @title = 'ザ・ノイジーズ'
-      @link = 'http://www.enterjam.com/?cid=3'
+      @link = 'http://www.enterjam.com/?cat=5'
       @description = 'エンタジャムが生ぬるいネットラジオ業界に殴りこみ（笑）映画・ゲーム・アニメ・漫画・音楽から精神世界まで、あらゆるキーワードで自分が好きなことだけノンストップで語りつくすネットラジオ！'
       @language = 'ja-JP'
       @image = 'https://pbs.twimg.com/profile_images/2414394300/71o5q8aqlciezq0590i1.jpeg'

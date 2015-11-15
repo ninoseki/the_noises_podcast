@@ -7,7 +7,7 @@ module TheNoises
     end
 
     def number
-      m = title.match(/第(\d+)回/)
+      m = title.force_encoding('UTF-8').match(/第(\d+)回/)
       m.nil? ? nil : m[1]
     end
 
@@ -20,11 +20,11 @@ module TheNoises
     end
 
     def pub_date
-      @pub_date ||= Date.parse(@element.css('div.date').first.text.split('｜').first).rfc822
+      @pub_date ||= Date.parse(@element.css('li.date').last.attribute('datetime').text).rfc822
     end
 
     def description
-      @description ||= @element.css('div.jgm_entry_desc_mark').first.text.chomp
+      @description ||= @element.css('p').first.text.chomp.force_encoding('UTF-8')
     end
 
     def valid?
