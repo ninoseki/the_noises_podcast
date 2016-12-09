@@ -18,7 +18,7 @@ module TheNoises
     end
 
     def body
-      @body ||= open(BASE_URL)
+      @body ||= open(BASE_URL).read
     end
   end
 end

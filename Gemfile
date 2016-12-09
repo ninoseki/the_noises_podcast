@@ -1,11 +1,11 @@
 # A sample Gemfile
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.3.3'
 
+gem 'dalli'
+gem 'oga'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'oga'
-gem 'dalli'
 
 group :test, :development do
   gem 'rake'
