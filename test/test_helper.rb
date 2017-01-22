@@ -1,6 +1,7 @@
 require_relative './../lib/the_noises'
 
 require 'webmock/minitest'
+require 'mocha/mini_test'
 require 'minitest/spec'
 require 'minitest/autorun'
 
