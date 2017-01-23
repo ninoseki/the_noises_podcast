@@ -1,4 +1,5 @@
 require 'rss'
+require 'json'
 
 module TheNoises
   class Podcast
@@ -11,15 +12,18 @@ module TheNoises
     end
 
     def rss
-      @rss = RSS::Rss.new('2.0')
-      @rss.channel = channel
-      items.each { |item| @rss.channel.items << item }
+      rss = RSS::Rss.new('2.0')
+      rss.channel = channel
+      items.map(&:to_rss_item).each { |item| rss.channel.items << item }
+      rss
+    end
 
-      @rss.to_s
+    def json
+      items.map(&:to_h).to_json
     end
 
     def items
-      Parser.new.items.map(&:to_rss_item)
+      Parser.new.items
     end
 
     def image

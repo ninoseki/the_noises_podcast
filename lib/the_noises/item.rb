@@ -31,6 +31,16 @@ module TheNoises
       [number, title, link, description, pub_date].all?
     end
 
+    def to_h
+      {
+        number: number,
+        link: link,
+        title: title,
+        pub_date: pub_date,
+        description: description
+      }
+    end
+
     def to_rss_item
       item = RSS::Rss::Channel::Item.new
 

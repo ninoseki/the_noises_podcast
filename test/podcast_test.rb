@@ -8,7 +8,12 @@ describe TheNoises::Podcast do
   end
 
   it 'should have valid rss' do
-    rss = RSS::Parser.parse(@podcast.rss)
+    rss = RSS::Parser.parse(@podcast.rss.to_s)
     rss.must_be_instance_of(RSS::Rss)
+  end
+
+  it 'should have valid json' do
+    json = JSON.parse(@podcast.json)
+    json.length.must_equal 1
   end
 end

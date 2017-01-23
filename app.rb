@@ -7,12 +7,8 @@ configure do
   end
 end
 
-get '/' do
-  File.read(File.join('public', 'index.html'))
-end
-
 # set a cache setting
-before '/rss' do
+before '/*' do
   require 'dalli'
   @cache = Dalli::Client.new(
     (ENV['MEMCACHIER_SERVERS'] || 'localhost').split(','),
@@ -27,15 +23,30 @@ before '/rss' do
   )
 end
 
+get '/' do
+  File.read(File.join('public', 'index.html'))
+end
+
 get '/rss' do
   content_type 'application/xml'
 
   cached_rss = @cache.get('rss')
   unless cached_rss
-    logger.info('renew a rss')
+    logger.info('renew rss')
     rss = TheNoises::Podcast.new.rss
     @cache.set('rss', rss)
   end
+  cached_rss || rss
+end
 
-  return cached_rss || rss
+get '/json' do
+  content_type :json
+
+  cached_json = @cache.get('json')
+  unless cached_json
+    logger.info('renew json')
+    json = TheNoises::Podcast.new.json
+    @cache.set('json', json)
+  end
+  cached_json || json
 end
