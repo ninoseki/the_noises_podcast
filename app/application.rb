@@ -1,3 +1,4 @@
+require 'dalli'
 require 'sinatra/base'
 
 class TheNoisesApp < Sinatra::Base
