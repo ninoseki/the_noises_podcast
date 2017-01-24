@@ -3,12 +3,7 @@ require 'test_helper'
 describe TheNoises::Parser do
   before do
     @parser = TheNoises::Parser.new
-
-    stub_request(:get, 'http://www.enterjam.com/?cat=5').
-      to_return(
-        status: 200,
-        body: body_for_test,
-      )
+    stubbing_request
   end
 
   it 'shoud have items' do

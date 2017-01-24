@@ -1,7 +1,7 @@
-require 'the_noises/item'
-require 'the_noises/parser'
-require 'the_noises/podcast'
-require 'the_noises/version'
+require_relative 'the_noises/item'
+require_relative 'the_noises/parser'
+require_relative 'the_noises/podcast'
+require_relative 'the_noises/version'
 
 
 module TheNoises

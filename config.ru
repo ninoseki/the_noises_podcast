@@ -13,5 +13,6 @@ elsif production?
   $logger.level = Logger::INFO
 end
 
-require './app'
-run Sinatra::Application
+require_relative './lib/the_noises'
+require_relative './app/application'
+run TheNoisesApp
