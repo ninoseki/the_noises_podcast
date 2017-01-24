@@ -15,7 +15,7 @@ module TheNoises
       rss = RSS::Rss.new('2.0')
       rss.channel = channel
       items.map(&:to_rss_item).each { |item| rss.channel.items << item }
-      rss
+      rss.to_s
     end
 
     def json

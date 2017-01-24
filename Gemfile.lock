@@ -58,6 +58,7 @@ DEPENDENCIES
   minitest
   mocha
   oga
+  rack-test
   rake
   sinatra
   sinatra-contrib
