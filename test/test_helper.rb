@@ -27,6 +27,6 @@ end
 
 def stubbing_request
   stub_request(:get, "http://www.enterjam.com/?cat=5").
-    with(headers: { 'Accept' => '*/*', 'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
+    with(headers: { 'Accept' => '*/*', 'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent' => 'Ruby' }).
     to_return(status: 200, body: body_for_test, headers: {})
 end

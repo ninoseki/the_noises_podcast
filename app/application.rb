@@ -1,7 +1,25 @@
 require 'dalli'
+require 'logger'
 require 'sinatra/base'
 
 class TheNoisesApp < Sinatra::Base
+
+  logger = Logger.new(STDOUT)
+
+  configure :development do
+    register Sinatra::Reloader
+    logger.level = Logger::DEBUG
+  end
+
+  configure :production do
+    logger.level = Logger::INFO
+  end
+
+  configure :production, :development do
+    enable :logging
+    use Rack::CommonLogger, logger
+  end
+
   before '/*' do
     @memcached_client = Dalli::Client.new(
       (ENV['MEMCACHIER_SERVERS'] || 'localhost').split(','),
