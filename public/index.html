@@ -23,4 +23,11 @@
   </p>
 </body>
 
+<script src="/assets/application.js"></script>
+<script>
+  if (typeof(Opal) !== 'undefined') {
+    Opal.loaded(["opal", "corelib/runtime.self", "sizzle.self"]);
+    Opal.load("application");
+  }
+</script>
 </html>
