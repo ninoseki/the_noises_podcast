@@ -6,11 +6,12 @@ require 'rack'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require_relative './lib/the_noises'
-require_relative './app/application'
-require_relative './app/assets'
+require_relative './app/controllers/api'
+require_relative './app/controllers/main'
 
 $stdout.sync = true
 
+# Sprockets settings for Opal
 opal = Opal::Server.new { |s|
   s.append_path 'app/opal'
   s.main = 'application'
@@ -32,4 +33,6 @@ map prefix do
   run sprockets
 end
 
-run TheNoisesApp
+MainController.set sprockets: sprockets, prefix: prefix
+use APIController
+run MainController

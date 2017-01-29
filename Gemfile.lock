@@ -30,10 +30,6 @@ GEM
     opal-browser (0.2.0)
       opal
       paggio
-    opal-sprockets (0.4.0.0.10.0.3.0.0)
-      opal (~> 0.10.0)
-      sprockets (~> 3.0)
-      tilt (>= 1.4)
     paggio (0.2.6)
     public_suffix (2.0.5)
     rack (1.6.5)
@@ -81,7 +77,6 @@ DEPENDENCIES
   oga
   opal
   opal-browser
-  opal-sprockets
   rack-test
   rake
   shotgun

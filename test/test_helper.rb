@@ -6,7 +6,8 @@ require 'minitest/autorun'
 require 'rack/test'
 
 require_relative '../lib/the_noises'
-require_relative '../app/application'
+require_relative '../app/controllers/api'
+require_relative '../app/controllers/main'
 
 WebMock.disable_net_connect!
 

@@ -7,6 +7,9 @@
   <link rel="alternate" type="application/rss+xml" href="/rss" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ザ・ノイジーズ - Podcast RSS</title>
+  <% if locals[:sprockets] && locals[:prefix] %>
+    <%= Opal::Sprockets.javascript_include_tag('application', sprockets: sprockets, prefix: prefix, debug: false) %>
+  <% end %>
 </head>
 
 <body>
@@ -23,11 +26,4 @@
   </p>
 </body>
 
-<script src="/assets/application.js"></script>
-<script>
-  if (typeof(Opal) !== 'undefined') {
-    Opal.loaded(["opal", "corelib/runtime.self", "sizzle.self"]);
-    Opal.load("application");
-  }
-</script>
 </html>
