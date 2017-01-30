@@ -41,7 +41,8 @@ class View
 
   def convert_date(s)
     # "Sat, 28 Jan 2017 00:00:00 +0000" => "28 Jan 2017"
-    s = s.split[1..3].join(" ")
+    # Dirty trick: Opal Date class doesn't support Capital abbr month name!
+    s = s.split[1..3].map(&:downcase).join(" ")
     Date.parse(s).to_s
   end
 
