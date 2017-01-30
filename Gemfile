@@ -1,9 +1,10 @@
-# A sample Gemfile
 source 'https://rubygems.org'
 ruby '2.4.0'
 
 gem 'dalli'
 gem 'oga'
+gem 'opal'
+gem 'opal-browser'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
@@ -20,4 +21,5 @@ end
 
 group :development do
   gem 'foreman'
+  gem 'shotgun'
 end

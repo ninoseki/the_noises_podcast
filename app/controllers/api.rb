@@ -2,7 +2,7 @@ require 'dalli'
 require 'logger'
 require 'sinatra/base'
 
-class TheNoisesApp < Sinatra::Base
+class APIController < Sinatra::Base
 
   logger = Logger.new(STDOUT)
 
@@ -20,7 +20,7 @@ class TheNoisesApp < Sinatra::Base
     use Rack::CommonLogger, logger
   end
 
-  before '/*' do
+  before do
     @memcached_client = Dalli::Client.new(
       (ENV['MEMCACHIER_SERVERS'] || 'localhost').split(','),
       {
@@ -32,10 +32,6 @@ class TheNoisesApp < Sinatra::Base
         expires_in: 3600 * 12
       }
     )
-  end
-
-  get '/' do
-    File.read File.expand_path("../../public/index.html", __FILE__)
   end
 
   get '/rss' do

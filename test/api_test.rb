@@ -4,22 +4,16 @@ require 'date'
 require 'json'
 require 'rss'
 
-def app
-  TheNoisesApp
-end
+describe "API" do
 
-describe "TheNoisesApp" do
+  def app
+    APIController
+  end
 
   include Rack::Test::Methods
 
   before do
     stubbing_request
-  end
-
-  it "/" do
-    get "/"
-    last_response.content_type.must_include "text/html"
-    last_response.body.must_include "Podcast"
   end
 
   describe "/rss" do
