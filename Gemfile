@@ -23,4 +23,5 @@ end
 group :development do
   gem 'foreman'
   gem 'shotgun'
+  gem 'travis'
 end
