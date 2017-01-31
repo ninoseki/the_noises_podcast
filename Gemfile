@@ -5,6 +5,7 @@ gem 'dalli'
 gem 'oga'
 gem 'opal'
 gem 'opal-browser'
+gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
