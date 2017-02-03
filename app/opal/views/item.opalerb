@@ -1,12 +1,12 @@
 <div class="item row">
-  <div class="col-md-2 metafield">
-    <p class="pub-date"><%= self["pub_date"] %></p>
+  <div class="col-md-2">
+    <p class="pub-date"><%= self.pub_date %></p>
   </div>
   <div class="col-md-10 contents">
-    <h4 class="title"><%= self["title"] %></h4>
-    <p class="description"><%= self["description"] %></p>
+    <h4 class="title"><%= self.title %></h4>
+    <p class="description"><%= self.description %></p>
     <audio controls>
-      <source src="<%= self["link"] %>" type="audio/mpeg">
+      <source src="<%= self.link %>" type="audio/mpeg">
     </audio>
   </div>
 </div>
