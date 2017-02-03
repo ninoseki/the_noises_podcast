@@ -9,6 +9,8 @@ require_relative '../lib/the_noises'
 require_relative '../app/controllers/api'
 require_relative '../app/controllers/main'
 
+require_relative '../app/opal/models/item'
+
 WebMock.disable_net_connect!
 
 def body_for_test
