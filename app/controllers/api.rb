@@ -35,26 +35,32 @@ class APIController < Sinatra::Base
   end
 
   get '/rss' do
-    content_type 'application/xml'
-
+    logger.info be_logged_params
     cached_rss = @memcached_client.get('rss')
     unless cached_rss
       logger.info('renew rss')
       rss = TheNoises::Podcast.new.rss
       @memcached_client.set('rss', rss)
     end
+
+    content_type 'application/xml'
     cached_rss || rss
   end
 
   get '/json' do
-    content_type :json
-
     cached_json = @memcached_client.get('json')
     unless cached_json
       logger.info('renew json')
       json = TheNoises::Podcast.new.json
       @memcached_client.set('json', json)
     end
+
+    content_type :json
     cached_json || json
+  end
+
+  def be_logged_params
+    headers = request.env.select { |k, _v| k.start_with?("HTTP") }
+    headers.merge(params)
   end
 end
