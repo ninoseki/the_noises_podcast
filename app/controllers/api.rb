@@ -1,5 +1,6 @@
 require 'dalli'
 require 'logger'
+require 'json'
 require 'sinatra/base'
 
 class APIController < Sinatra::Base
@@ -12,7 +13,7 @@ class APIController < Sinatra::Base
   end
 
   configure :production do
-    logger.level = Logger::INFO
+    logger.level = Logger::ERROR
   end
 
   configure :production, :development do
@@ -33,9 +34,8 @@ class APIController < Sinatra::Base
       }
     )
   end
-
   get '/rss' do
-    logger.info be_logged_params
+    puts be_logged_params.to_json
     cached_rss = @memcached_client.get('rss')
     unless cached_rss
       logger.info('renew rss')
