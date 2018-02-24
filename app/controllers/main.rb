@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require 'opal'
+require 'opal/sprockets'
 
 class MainController < Sinatra::Base
   set :views, File.expand_path("../../views", __FILE__)

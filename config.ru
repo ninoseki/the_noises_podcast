@@ -1,7 +1,9 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'dotenv/load'
 require 'opal'
 require 'opal-browser'
+require 'opal/sprockets/server'
 require 'rack'
 require 'sinatra'
 require 'sinatra/reloader' if development?
@@ -12,7 +14,7 @@ require_relative './app/controllers/main'
 $stdout.sync = true
 
 # Sprockets settings for Opal
-opal = Opal::Server.new { |s|
+opal = Opal::Sprockets::Server.new { |s|
   s.append_path 'app/opal'
   s.main = 'application'
 }
