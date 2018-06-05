@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 require 'webmock/minitest'
-require 'mocha/mini_test'
+require 'mocha/minitest'
 require 'minitest/spec'
 require 'minitest/autorun'
 require 'rack/test'
