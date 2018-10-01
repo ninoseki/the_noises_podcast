@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rss'
 # http://www.apple.com/jp/itunes/podcasts/specs.html#rss
 module TheNoises

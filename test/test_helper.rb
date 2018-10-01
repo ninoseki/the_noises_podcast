@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 ENV['RACK_ENV'] = 'test'
+
 require 'webmock/minitest'
 require 'mocha/minitest'
 require 'minitest/spec'
@@ -8,20 +11,19 @@ require 'rack/test'
 require_relative '../lib/the_noises'
 require_relative '../app/controllers/api'
 require_relative '../app/controllers/main'
-
 require_relative '../app/opal/models/item'
 
 WebMock.disable_net_connect!
 
 def body_for_test
   File.read(
-    File.expand_path('../index.html', __FILE__)
+    File.expand_path('index.html', __dir__)
   )
 end
 
 def items_for_test
   article = Oga.parse_html(
-    File.read(File.expand_path("../article.html", __FILE__))
+    File.read(File.expand_path('article.html', __dir__))
   )
 
   item = TheNoises::Item.new(article)

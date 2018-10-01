@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require 'dalli'
 require 'logger'
 require 'json'
 require 'sinatra/base'
 
 class APIController < Sinatra::Base
-
   logger = Logger.new(STDOUT)
 
   configure :development do
@@ -24,14 +25,12 @@ class APIController < Sinatra::Base
   before do
     @memcached_client = Dalli::Client.new(
       (ENV['MEMCACHIER_SERVERS'] || 'localhost').split(','),
-      {
-        username: ENV['MEMCACHIER_USERNAME'] || '',
-        password: ENV['MEMCACHIER_PASSWORD'] || '',
-        failover: true,
-        socket_timeout: 1.5,
-        socket_failure_delay: 0.2,
-        expires_in: 3600 * 12
-      }
+      username: ENV['MEMCACHIER_USERNAME'] || '',
+      password: ENV['MEMCACHIER_PASSWORD'] || '',
+      failover: true,
+      socket_timeout: 1.5,
+      socket_failure_delay: 0.2,
+      expires_in: 3600 * 12
     )
   end
   get '/rss' do
