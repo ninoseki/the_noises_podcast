@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 require 'dalli'
 require 'date'
@@ -5,7 +7,6 @@ require 'json'
 require 'rss'
 
 describe "API" do
-
   def app
     APIController
   end
@@ -57,5 +58,4 @@ describe "API" do
       item["link"].must_equal 'http://enterjam.net/podcast/noises/796.mp3'
     end
   end
-
 end

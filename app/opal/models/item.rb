@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OpalApp
   class Item
     attr_reader :params

@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module OpalApp
   class ItemsView
-
     attr_accessor :element
 
     def initialize

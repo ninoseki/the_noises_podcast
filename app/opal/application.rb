@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'opal'
 require 'date'
 require 'browser'
@@ -10,7 +12,6 @@ require 'views/items_view'
 
 module OpalApp
   class Application
-
     attr_reader :items_view
 
     def initialize
